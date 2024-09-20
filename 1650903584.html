@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car For You Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #C9C0BB;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .logo {
+            flex: 0 0 auto;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .nav-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-container nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-container a {
+            color: #ffffff;
+            background-color: #070000;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-container a:hover {
+            background-color: #000000;
+        }
+
+        .nav-container .active {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        .search-login {
+            display: flex;
+            align-items: center;
+        }
+
+        .search {
+            padding: 5px;
+            font-size: 1em;
+            border-radius: 4px;
+            border: none;
+            margin-right: 10px;
+            width: 200px;
+            margin: 10;
+        }
+
+        .login-button {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #000000;
+        }
+
+        .title {
+            text-align: center;
+            padding: 120px 10px;
+            border-bottom: 1px solid #000000;
+            margin-bottom: 10px;
+            font-family: 'Lucida Sans';
+            background-image: url('https://i.gifer.com/VdgG.gif');
+            justify-self: center;
+        }
+
+        .title h1 {
+            margin: 0 auto;
+            font-size: 5em;
+            color: #000000;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .item {
+            flex: 1;
+            /* min-width: 220px; */
+            background: #ffffff;
+            margin: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            height: fit-content;
+        }
+
+        .item a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .item h3 {
+            margin: 10px;
+            font-size: 1.2em;
+            font-family: sans-serif;
+            background-color: #ffcbcb;
+            justify-content: center;
+        }
+
+        .item p {
+            margin: 10px;
+            color: #000000;
+            font-family: Verdana;
+            background-color: #ebcaca;
+        }
+
+        .button-container {
+            margin: 10px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .button-container_2 {
+            margin: 10px;
+            display: flex;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/623/239/original/auto-car-logo-template-vector-icon.jpg"
+                alt="Logo">
+            <!-- Replace with your logo image -->
+        </div>
+        <div class="nav-container">
+            <nav>
+                <a href="#" class="active">หน้าหลัก</a>
+                <a href="#">ประเภท</a>
+                <a href="#">ราคา</a>
+                <a href="#">รถใหม่</a>
+                <a href="#">โปรโมชั่น</a>
+            </nav>
+        </div>
+        <div class="search-login">
+            <input type="text" class="search" placeholder="ค้นหา...">
+            <a href="#" class="login-button">ล็อกอิน</a>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Car For You</h1>
+
+        <body style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8SdsR9K6qNNxkExuSRl5RWtaas2EIeFLl8A&s');">
+        </body>
+
+        <div class="button-container_2">
+            <div class="scroll-buttons">
+                <button id="Menu" class="Menu">Menu</button>
+            </div>
+        </div>
+        <div class="button-container">
+            <div class="scroll-buttons">
+                <button id="scrollDown" class="scroll-btn">Scroll Down</button>
+                <button id=" X " class=" X ">X</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <a href="https://rod.kaidee.com/c11-auto-car" target="_blank">
+                <img src="https://media.istockphoto.com/id/942526180/photo/3d-illustration-of-red-generic-sports-coupe-car-on-white.jpg?s=612x612&w=0&k=20&c=aC2cknyVpBqFSDECB950gAn4IzJsdjit3fM2W8ehxPM="
+                    alt="รถยนต์">
+                <h3>รถยนต์</h3>
+                <p>ขอให้โชค ลาภและยศ สรรเสริญ กับเงินตรา หลั่งไหลมา พร้อมความสุข ทุกวันคืน สาธุ ขอให้มีแต่โชคลาภ
+                    มีแต่สิ่งดี ๆ ขับขี่ปลอดภัย นำเงินนำทอง เฮง ๆ ปัง ๆ รวย ๆ</p>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.kaidee.com/c12-motorcycle-motorcycle" target="_blank">
+                <img src="https://www.motorcyclecruiser.com/resizer/-PAnxmuTE3vonuu0CUHRZqr2kY8=/1440x0/smart/cloudfront-us-east-1.images.arcpublishing.com/octane/U7NE4JOSA757H7EYU44LJEESSA.jpg"
+                    alt="มอไซค์">
+                <h3>มอไซค์</h3>
+                <p>รถคือชีวิต เมียคือหัวใจ จะมีชีวิตไปทำไม ถ้าหัวใจไม่มี</p>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.one2car.com/%E0%B8%A3%E0%B8%96-%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A-%E0%B8%82%E0%B8%B2%E0%B8%A2?fuel_type=electric"
+                target="_blank">
+                <img src="https://s.isanook.com/au/0/ud/15/77160/hong-guang-mini-ev-tn.jpg" alt="รถยนต์ไฟฟ้า">
+                <h3>รถยนต์ไฟฟ้า</h3>
+                <p>ชีวิตที่ดี ไม่จำเป็นต้องมีทุกอย่าง แค่มีใครบางคนยืนอยู่ข้างๆ อะไรบางอย่างก็ไม่จำเป็น</p>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.one2car.com/" target="_blank">
+                <img src="https://9thanwa.org/wp-content/uploads/2022/03/Toyota-Revo-Rocco-Motorhome-4-%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B9-1.jpg"
+                    alt="รถยนต์บ้าน/รถตู้">
+                <h3>รถยนต์บ้าน/รถตู้</h3>
+                <p>ขับรถอาจจะหลงทาง แต่ใจเราว่างเลยอยากหลงเธอ</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
